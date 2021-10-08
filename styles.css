@@ -989,9 +989,29 @@ header video {
   letter-spacing: 0.2rem;
 }
 
-.about .kaushal-info {
-  width: var(--text-width);
+
+  .para_v{
+      display: grid;
+      grid-template-columns: repeat(2, 1fr); 
+  }
+  .ele-1 {
+    width: 100px;
+    height: 100px;
+    border: none;
+    background: #ffffff 0% 0% no-repeat padding-box;
+    opacity: 0.2;
 }
+
+  .you_tube{
+      text-align: center;
+      margin: 3vw;
+
+  }
+  .kaushal_content{
+    width: var(--text-width);
+      font-size: 1.2rem;
+      margin: 3vw;
+  }
 
 /* ---Event Section--- */
 
@@ -1243,9 +1263,9 @@ details summary {
     font-family: "Open Sans", sans-serif;
   }
 
-  .title .title-sub-heading {
-    padding: 30px 20px 0;
-    font-size: 1.6rem;
+  .title .title-subheading {
+    padding: 20px 20px 0;
+    font-size: 1.3rem;
     font-family: "Open Sans", sans-serif;
   }
 
@@ -1253,11 +1273,38 @@ details summary {
     font-size: 1.2rem;
     margin: 3% 30%;
     padding: 3% 2%;
-    background: transparent;
-    border: 1.5px solid #7651ce;
+    background: rgba(255,255,255);
+    color: #302758;
   }
 
   .title .days-remaining::before {
+    display:none;
+    content: "";
+  }
+
+  .title .days-remaining::after {
+    display: none;
+    content: "";
+  }
+
+  .register-btn {
+    display: block;
+    padding: 10px;
+    width: 30%;
+    margin-bottom: 30px;
+    display: inline-block;
+    justify-content: center;
+    text-decoration: none;
+    border: 1.5px solid #7651ce;
+    text-align: center;
+    margin-top: 20px;
+    background-color: #7651ce;
+    cursor: pointer;
+    color: var(--text-color);
+    position: relative;
+  }
+
+    .title .register-btn::before {
     position: absolute;
     top: -8px;
     left: -8px;
@@ -1269,7 +1316,7 @@ details summary {
     content: "";
   }
 
-  .title .days-remaining::after {
+  .title .register-btn::after {
     position: absolute;
     bottom: -8px;
     right: -8px;
@@ -1282,19 +1329,6 @@ details summary {
     transform: rotate(180deg);
   }
 
-  .register-btn {
-    display: block;
-    padding: 10px;
-    width: 30%;
-    display: inline-block;
-    justify-content: center;
-    text-decoration: none;
-    border: 1.5px solid #7651ce;
-    text-align: center;
-    margin-top: 20px;
-    background-color: #7651ce;
-    cursor: pointer;
-  }
 
   .register-btn:hover {
       background-color: #22123d;
@@ -1421,6 +1455,12 @@ details summary {
         width: var(--text-width);
 
     } */
+
+  
+  .para_v{
+      display: grid;
+      grid-template-columns: repeat(1, 1fr); 
+  }
 
   /* ---Event Section--- */
 
