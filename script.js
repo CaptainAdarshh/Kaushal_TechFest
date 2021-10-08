@@ -1,7 +1,25 @@
 const menu = document.querySelector('#mobile-menu');
 const menuLinks = document.querySelector('.nav-menu');
 const navLinks = document.querySelector('.nav-links')
+const loader = document.querySelector('.loader');
+const main = document.querySelector('.kaushal-website');
 
+
+// loader
+function init() {
+  setTimeout(() => {
+    loader.style.opacity = 0;
+    loader.style.display = 'none';
+
+    main.style.display = 'block';
+    setTimeout(() => (main.style.opacity = 1), 50);
+  }, 10000);
+}
+
+init();
+
+
+// Navbar
 menu.addEventListener('click', function() {
     menu.classList.toggle('is-active');
     console.log("Button is active");
