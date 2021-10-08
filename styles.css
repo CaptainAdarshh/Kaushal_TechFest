@@ -171,10 +171,6 @@ nav {
     display: none;
   }
 
-  .nav-links {
-    pointer-events: none;
-  }
-
   .nav-links.is-open {
     pointer-events: all;
   }

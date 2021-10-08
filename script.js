@@ -6,7 +6,11 @@ menu.addEventListener('click', function() {
     menu.classList.toggle('is-active');
     console.log("Button is active");
     menuLinks.classList.toggle('active');
+  
+  for (let i = 0; i < 6; i++) {
     navLinks.classList.toggle("is-open");
+  }
+  
 })
 
 
