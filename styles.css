@@ -972,7 +972,8 @@ header video {
 .about,
 .event,
 .gallery,
-.about-college {
+.about-college,
+.sponsors {
   margin: var(--section-margin);
   color: var(--text-color);
   padding: var(--section-padding);
@@ -981,7 +982,8 @@ header video {
 .about .kaushal-heading,
 .event .event-heading,
 .gallery h1,
-.about-college h1 {
+.about-college h1,
+.ml7 {
   font-size: var(--section-heading);
   padding-bottom: var(--heading-padding);
   letter-spacing: 0.2rem;
@@ -1165,6 +1167,25 @@ header video {
   border-radius: 0.8rem;
   /* box-shadow: 0px 5px 15px rgba(255,255,255,0.35); */
   object-fit: cover;
+}
+
+
+/* Sponsers Section */
+
+.sponsor-box {
+    margin: 0 15vh 15vh 15vh;
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+.sponsor{
+    padding: 0 0 0 0;  
+
+
+}
+.company{
+    height: 70%;
+    width: 70%;
 }
 
 /* FAQs Section */
@@ -1423,6 +1444,12 @@ details summary {
     display: flex;
     flex-direction: column;
     justify-content: center;
+  }
+
+  /* SPonseors section */
+  
+.sponsor-box {
+   grid-template-columns: repeat(2, 1fr);
   }
 
   /* FAQs Section */
